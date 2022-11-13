@@ -15,7 +15,7 @@ console.log("1");
 // 브라우저에게 먼저 요청
 // 브라우저에서 1초의 시간이 지난 후에 내부 함수 호출
 setTimeout(() => {
-    // 1초가 지난 다음에 함수를 호출되기를 바라는 함수(callback 함수)
+    // 1초가 지난 다음에 함수가 호출되기를 바라는 함수(callback 함수)
     return (console.log('2'));
 }, 2000);
 // 콘솔로 바로 요청
@@ -116,4 +116,5 @@ userStroage.loginUser(
     - 콜백함수의 단점
         - 코드가 복잡해지면 콜백함수는 가독성을 매우 떨어뜨림
         - 유지보수, 디버깅이 어려움
+    - UserWithRole은 매개변수, {name: "ellie", role: "admin"}은 인자
 */
