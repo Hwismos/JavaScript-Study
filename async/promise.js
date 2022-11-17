@@ -92,3 +92,17 @@ getHen()
     .catch(error => { return ("빵") })
     .then(egg => cook(egg))
     .then(meal => console.log(meal));
+
+
+
+const getPromise = () => {
+    return (
+        new Promise((resolve, reject) => {
+            setTimeout(() => { resolve(() => { console.log("통신이 완료됐습니다.") }) }, 1000)
+        })
+    )
+}
+
+console.log(getPromise().then(foo => { foo() }));
+
+
